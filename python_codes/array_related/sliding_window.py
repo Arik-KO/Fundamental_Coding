@@ -1,5 +1,4 @@
 """
-
 Given a list of integers and a window size k, return a list
 of the maximum value in each window as it slides from
 left to right.
@@ -23,5 +22,26 @@ current maximum efficiently as the window slides?
 
 The brute force alone is a valid first submission. Think about the optimisation only
 after you have brute force working.
-
 """
+from typing import List
+def sliding_window(array:List, k:int)-> List:
+    sliding_array = list()
+    n = len(array)
+
+    for ind in range(n):
+        max_value = array[ind]
+        if ind + k <= n:
+            for j in range(ind+k):
+                if array[j] > max_value:
+                    max_value = array[j]
+                else:
+                    pass
+            sliding_array.append(max_value)
+
+
+    return sliding_array
+
+if __name__ == "__main__":
+    test = [1, 3, -1, -3, 5, 3, 6, 7]
+    K = 3
+    print(sliding_window(test, K))
