@@ -31,7 +31,7 @@ def sliding_window(array:List, k:int)-> List:
     for ind in range(n):
         max_value = array[ind]
         if ind + k <= n:
-            for j in range(ind+k):
+            for j in range(ind, ind+k):
                 if array[j] > max_value:
                     max_value = array[j]
                 else:
@@ -42,6 +42,6 @@ def sliding_window(array:List, k:int)-> List:
     return sliding_array
 
 if __name__ == "__main__":
-    test = [1, 3, -1, -3, 5, 3, 6, 7]
-    K = 3
+    test = [5, 1, 2, 3]
+    K = 2
     print(sliding_window(test, K))
