@@ -37,4 +37,4 @@ if __name__ == '__main__':
     left_rotation(a, 2)
     right_rotation(b, 2)
     print(f"after left rotation the list a will be: {a}\n"
-          f"after right totation the list b will be : {b}")
+          f"after right rotation the list b will be : {b}")

@@ -15,13 +15,6 @@ Window [-3,5,3]  → max = 5
 Window [5,3,6]   → max = 6
 Window [3,6,7]   → max = 7
 
-First implement the brute force solution and state its complexity
-Then think — can you do better than O(n×k)?
-Hint: what if you used a data structure that always kept track of the
-current maximum efficiently as the window slides?
-
-The brute force alone is a valid first submission. Think about the optimisation only
-after you have brute force working.
 """
 from typing import List
 def sliding_window(array:List, k:int)-> List:
