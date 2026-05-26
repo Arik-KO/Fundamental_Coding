@@ -1,8 +1,22 @@
-WARNING:root:35
-DEBUG:root:-5
-DEBUG:root:300
-DEBUG:root:0.75
-	2026-05-21 16:27:55,784 : WARNING : 21 : 35
-	2026-05-21 16:27:55,785 : DEBUG : 22 : -5
-	2026-05-21 16:27:55,785 : DEBUG : 23 : 300
-	2026-05-21 16:27:55,785 : DEBUG : 24 : 0.75
+	2026-05-26 12:49:45,135 : ERROR : 33 : tried to divide by zero
+	2026-05-26 12:53:25,962 : ERROR : 36 : tried to divide by zero
+	2026-05-26 12:55:03,963 : DEBUG : 43 : 15
+	2026-05-26 12:55:03,963 : DEBUG : 44 : 15
+	2026-05-26 12:55:03,963 : DEBUG : 45 : 0
+	2026-05-26 12:55:03,963 : ERROR : 36 : tried to divide by zero
+	2026-05-26 12:55:03,963 : DEBUG : 46 : None
+	2026-05-26 12:56:00,304 : DEBUG : 44 : 15
+	2026-05-26 12:56:00,305 : DEBUG : 45 : 15
+	2026-05-26 12:56:00,305 : DEBUG : 46 : 0
+	2026-05-26 12:56:00,305 : ERROR : 37 : tried to divide by zero
+	2026-05-26 12:56:00,305 : DEBUG : 47 : None
+	2026-05-26 12:56:18,502 : DEBUG : 44 : 15
+	2026-05-26 12:56:18,502 : DEBUG : 45 : 15
+	2026-05-26 12:56:18,502 : DEBUG : 46 : 0
+	2026-05-26 12:56:18,505 : ERROR : 37 : tried to divide by zero
+Traceback (most recent call last):
+  File "D:\Research related notes and books\Fundamental_Coding\python_codes\python related\logger_implmentation_1.py", line 35, in division
+    result = x /y
+             ~~^~
+ZeroDivisionError: division by zero
+	2026-05-26 12:56:18,505 : DEBUG : 47 : None
